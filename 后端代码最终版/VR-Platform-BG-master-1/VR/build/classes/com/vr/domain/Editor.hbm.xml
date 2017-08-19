@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-20 15:29:22 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="com.vr.domain.Editor" table="Editor" catalog="vr" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="password" type="java.lang.Integer">
+            <column name="password" />
+        </property>
+        <property name="username" type="java.lang.Integer">
+            <column name="username" />
+        </property>
+    </class>
+</hibernate-mapping>

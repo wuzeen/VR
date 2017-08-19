@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-20 15:29:22 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="com.vr.domain.News" table="News" catalog="vr" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="author" type="string">
+            <column name="author" />
+        </property>
+        <property name="downvote" type="java.lang.Integer">
+            <column name="downvote" />
+        </property>
+        <property name="editorId" type="java.lang.Integer">
+            <column name="editor_id" />
+        </property>
+        <property name="isPush" type="java.lang.Integer">
+            <column name="is_push" />
+        </property>
+        <property name="lastEditTime" type="string">
+            <column name="last_edit_time" />
+        </property>
+        <property name="newsAbstract" type="string">
+            <column name="news_abstract" />
+        </property>
+        <property name="path" type="string">
+            <column name="path" />
+        </property>
+        <property name="picLocation" type="string">
+            <column name="pic_location" />
+        </property>
+        <property name="source" type="string">
+            <column name="source" />
+        </property>
+        <property name="tag" type="string">
+            <column name="tag" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" />
+        </property>
+        <property name="upvote" type="java.lang.Integer">
+            <column name="upvote" />
+        </property>
+    </class>
+</hibernate-mapping>

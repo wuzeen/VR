@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-25 17:54:50 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.vr.domain.Answer" table="Answer" catalog="vr">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="user" class="com.vr.domain.User" fetch="select">
+            <column name="userid" />
+        </many-to-one>
+        <many-to-one name="question" class="com.vr.domain.Question" fetch="select">
+            <column name="questionid" />
+        </many-to-one>
+        <property name="answer" type="string">
+            <column name="Answer" length="16777215" />
+        </property>
+        <property name="productname" type="string">
+            <column name="productname" length="65535" />
+        </property>
+        <property name="producttype" type="string">
+            <column name="producttype" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

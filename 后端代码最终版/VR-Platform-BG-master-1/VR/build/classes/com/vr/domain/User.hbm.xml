@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-20 15:29:22 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="com.vr.domain.User" table="User" catalog="vr" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="activated" type="java.lang.Integer">
+            <column name="activated" />
+        </property>
+        <property name="age" type="java.lang.Integer">
+            <column name="age" />
+        </property>
+        <property name="banned" type="java.lang.Integer">
+            <column name="banned" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" />
+        </property>
+        <property name="nickname" type="string">
+            <column name="nickname" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" />
+        </property>
+        <property name="sex" type="java.lang.Integer">
+            <column name="sex" />
+        </property>
+        <property name="type" type="java.lang.Integer">
+            <column name="type" />
+        </property>
+        <property name="username" type="string">
+            <column name="username" />
+        </property>
+        <property name="votedflag" type="java.lang.Integer">
+            <column name="votedflag" />
+        </property>
+        <set name="messageLeavings" table="MessageLeaving" inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="user_id" />
+            </key>
+            <one-to-many class="com.vr.domain.MessageLeaving" />
+        </set>
+        <set name="answers" table="Answer" inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="userid" />
+            </key>
+            <one-to-many class="com.vr.domain.Answer" />
+        </set>
+        <set name="messageResponses" table="MessageResponse" inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="user" />
+            </key>
+            <one-to-many class="com.vr.domain.MessageResponse" />
+        </set>
+    </class>
+</hibernate-mapping>

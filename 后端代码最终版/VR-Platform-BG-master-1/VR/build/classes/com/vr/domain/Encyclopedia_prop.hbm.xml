@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-8-5 10:24:23 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vr.domain.Encyclopedia_prop" table="ENCYCLOPEDIA_PROP">
+    
+    <composite-id>
+       <key-property name="id" column="id"  type="int"></key-property>
+       <key-property name="prop_id" column="prop_id"  type="int"></key-property>
+    </composite-id>
+        <property name="prop_keyword" type="java.lang.String">
+            <column name="prop_keyword" />
+        </property>
+        <property name="content" type="java.lang.String">
+            <column name="content" />
+        </property>
+        <property name="changenote" type="java.lang.String">
+            <column name="changenote" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-8-18 6:03:55 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vr.domain.Encyclopedia_propchangerequire" table="ENCYCLOPEDIA_PROPCHANGEREQUIRE">
+        
+        <composite-id>
+        <key-property name="id" column="id"  type="int"></key-property>
+        <key-property name="prop_id" column="prop_id"  type="int"></key-property>
+        <key-property name="changenote" column="changenote"  type="java.lang.String"></key-property>
+        </composite-id>
+        
+        <property name="prop_keyword" type="java.lang.String">
+            <column name="prop_keyword" />
+        </property>
+        <property name="content" type="java.lang.String">
+            <column name="content" />
+        </property>
+    </class>
+</hibernate-mapping>

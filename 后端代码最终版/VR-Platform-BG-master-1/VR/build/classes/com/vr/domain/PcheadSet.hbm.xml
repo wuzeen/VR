@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-22 15:00:30 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.vr.domain.PcheadSet" table="PCHeadSet" catalog="vr">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="remark" type="string">
+            <column name="Remark" length="65535" />
+        </property>
+        <property name="brand" type="string">
+            <column name="Brand" length="65535" />
+        </property>
+        <property name="salesmodel" type="string">
+            <column name="Salesmodel" length="65535" />
+        </property>
+        <property name="productmodel" type="string">
+            <column name="Productmodel" length="65535" />
+        </property>
+        <property name="screentype" type="string">
+            <column name="Screentype" length="65535" />
+        </property>
+        <property name="monocularresolution" type="string">
+            <column name="Monocularresolution" length="65535" />
+        </property>
+        <property name="weight" type="string">
+            <column name="Weight" length="65535" />
+        </property>
+        <property name="workingtemperature" type="string">
+            <column name="Workingtemperature" length="65535" />
+        </property>
+        <property name="bluerayirradiance" type="string">
+            <column name="Bluerayirradiance" length="65535" />
+        </property>
+        <property name="soundpressurelevel" type="string">
+            <column name="Soundpressurelevel" length="65535" />
+        </property>
+        <property name="maximumoutputvoltage" type="string">
+            <column name="Maximumoutputvoltage" length="65535" />
+        </property>
+        <property name="broadbandcharacteristicvoltageofearphone" type="string">
+            <column name="Broadbandcharacteristicvoltageofearphone" length="65535" />
+        </property>
+        <property name="boundarywarning" type="string">
+            <column name="Boundarywarning" length="65535" />
+        </property>
+        <property name="radiationdisturbance" type="string">
+            <column name="Radiationdisturbance" length="65535" />
+        </property>
+        <property name="electrostaticdischarge" type="string">
+            <column name="Electrostaticdischarge" length="65535" />
+        </property>
+        <property name="fieldangle" type="string">
+            <column name="Fieldangle" length="65535" />
+        </property>
+        <property name="refreshrate" type="string">
+            <column name="Refreshrate" length="65535" />
+        </property>
+        <property name="systemdelay" type="string">
+            <column name="Systemdelay" length="65535" />
+        </property>
+        <property name="trackingmode" type="string">
+            <column name="Trackingmode" length="65535" />
+        </property>
+        <property name="trackingrange" type="string">
+            <column name="Trackingrange" length="65535" />
+        </property>
+        <property name="meanchangeofvisualacuity" type="string">
+            <column name="Meanchangeofvisualacuity" length="65535" />
+        </property>
+        <property name="ssqmean" type="string">
+            <column name="SSQmean" length="65535" />
+        </property>
+        <property name="cvsmean" type="string">
+            <column name="CVSmean" length="65535" />
+        </property>
+        <property name="picLocation" type="string">
+            <column name="pic_location" length="65535" />
+        </property>
+        <property name="hot" type="string">
+            <column name="Hot" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

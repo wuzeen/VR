@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-20 15:29:22 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="com.vr.domain.MessageResponse" table="MessageResponse" catalog="vr" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="messageLeaving" class="com.vr.domain.MessageLeaving" fetch="select" lazy="false">
+            <column name="message_leaving_id" />
+        </many-to-one>
+        <many-to-one name="user" class="com.vr.domain.User" fetch="select" lazy="false">
+            <column name="user" />
+        </many-to-one>
+        <property name="messageResponse" type="string">
+            <column name="message_response" length="65535" />
+        </property>
+        <property name="releasetime" type="string">
+            <column name="releasetime" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

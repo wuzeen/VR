@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-22 15:24:21 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.vr.domain.Thumbsupdown" table="Thumbsupdown" catalog="vr">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="type" type="string">
+            <column name="type" length="45" />
+        </property>
+        <property name="upvote" type="java.lang.Integer">
+            <column name="upvote" />
+        </property>
+        <property name="downvote" type="java.lang.Integer">
+            <column name="downvote" />
+        </property>
+    </class>
+</hibernate-mapping>

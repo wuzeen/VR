@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-20 15:29:22 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="com.vr.domain.VotedUser" table="VotedUser" catalog="vr" optimistic-lock="version">
+        <composite-id name="id" class="com.vr.domain.VotedUserId">
+            <key-property name="userid" type="int">
+                <column name="userid" />
+            </key-property>
+            <key-property name="name" type="string">
+                <column name="name" length="45" />
+            </key-property>
+        </composite-id>
+        <property name="type" type="string">
+            <column name="type" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

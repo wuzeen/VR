@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-name="Admin" match-catalog="vr"></table-filter>
+	<table-filter match-name="AllInOnePC" match-catalog="vr"></table-filter>
+	<table-filter match-name="Answer" match-catalog="vr"></table-filter>
+	<table-filter match-name="Editor" match-catalog="vr"></table-filter>
+	<table-filter match-name="MessageLeaving" match-catalog="vr"></table-filter>
+	<table-filter match-name="MessageResponse" match-catalog="vr"></table-filter>
+	<table-filter match-name="MobileBox" match-catalog="vr"></table-filter>
+	<table-filter match-name="News" match-catalog="vr"></table-filter>
+	<table-filter match-name="PCHeadSet" match-catalog="vr"></table-filter>
+	<table-filter match-name="Profile" match-catalog="vr"></table-filter>
+	<table-filter match-name="Question" match-catalog="vr"></table-filter>
+	<table-filter match-name="Thumbsupdown" match-catalog="vr"></table-filter>
+	<table-filter match-name="User" match-catalog="vr"></table-filter>
+	<table-filter match-name="VotedUser" match-catalog="vr"></table-filter>
+	<table-filter match-name="Encyclopedia" match-catalog="vr"></table-filter>
+	<table-filter match-name="Encyclopedia_prop" match-catalog="vr"></table-filter>
+	<table-filter match-name="Encyclopedia_propchangerequire" match-catalog="vr"></table-filter>
+</hibernate-reverse-engineering>
